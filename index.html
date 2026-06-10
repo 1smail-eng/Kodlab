@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CircuitFlow - Profesyonel Mekanik Platformu</title>
+    <title>CircuitFlow - Mekanik Akış</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="logo">CircuitFlow</div>
-        <input type="text" id="search" placeholder="Proje veya parça ara...">
+    <nav class="navbar">
+        <div id="user-zone"><button onclick="app.login()">Giriş Yap</button></div>
+        <input type="text" id="searchInput" placeholder="Proje veya parça ara...">
     </nav>
 
-    <main class="main-container" id="feed-container"></main>
-
-    <footer class="footer-bar">
-        <button id="add-project-btn">Proje Paylaş</button>
-    </footer>
+    <main id="feed" class="feed"></main>
 
     <script src="script.js"></script>
 </body>
