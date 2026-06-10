@@ -3,34 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CircuitFlow - Mekanik Paylaşımlar</title>
+    <title>CircuitFlow - Profesyonel Mekanik Platformu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <h2>CircuitFlow</h2>
+    <nav class="nav-bar">
+        <div class="logo">CircuitFlow</div>
+        <input type="text" id="search" placeholder="Proje veya parça ara...">
     </nav>
 
-    <div class="feed">
-        <div class="card">
-            <div class="video-placeholder">Mekanik Proje Videosu</div>
-            <div class="info">
-                <h3>Arduino Robot Kol</h3>
-                <p>#mekanik #arduino #coding</p>
-                <button class="like-btn">❤️ Beğen</button>
-            </div>
-        </div>
+    <main class="main-container" id="feed-container"></main>
 
-        <div class="card">
-            <div class="video-placeholder">Kodlama Projesi Videosu</div>
-            <div class="info">
-                <h3>ESP32 Akıllı Ev</h3>
-                <p>#iot #esp32 #elektronik</p>
-                <button class="like-btn">❤️ Beğen</button>
-            </div>
-        </div>
-    </div>
+    <footer class="footer-bar">
+        <button id="add-project-btn">Proje Paylaş</button>
+    </footer>
 
     <script src="script.js"></script>
 </body>
