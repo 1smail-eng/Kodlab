@@ -1,18 +1,7 @@
-body { background-color: #121212; color: white; text-align: center; font-family: sans-serif; }
-nav { padding: 20px; border-bottom: 1px solid #333; }
-.card { 
-    background: #1c1c1c; 
-    margin: 20px auto; 
-    padding: 20px; 
-    width: 350px; 
-    border-radius: 15px; 
-}
-.video-placeholder { 
-    background: #333; 
-    height: 300px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-bottom: 10px; 
-}
-button { background: #ff0050; border: none; color: white; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+body { background-color: #000; color: white; margin: 0; font-family: sans-serif; }
+nav { height: 60px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #333; }
+.feed { display: flex; flex-direction: column; align-items: center; padding: 20px; }
+.card { background: #111; width: 90%; max-width: 400px; margin-bottom: 30px; border-radius: 20px; overflow: hidden; border: 1px solid #222; }
+.video-placeholder { height: 500px; background: #222; display: flex; align-items: center; justify-content: center; }
+.info { padding: 15px; }
+.like-btn { background: #ff0050; border: none; color: white; padding: 10px 20px; border-radius: 50px; cursor: pointer; width: 100%; font-weight: bold; }
