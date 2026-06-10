@@ -1,7 +1,21 @@
-body { background-color: #000; color: white; margin: 0; font-family: sans-serif; }
-nav { height: 60px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #333; }
-.feed { display: flex; flex-direction: column; align-items: center; padding: 20px; }
-.card { background: #111; width: 90%; max-width: 400px; margin-bottom: 30px; border-radius: 20px; overflow: hidden; border: 1px solid #222; }
-.video-placeholder { height: 500px; background: #222; display: flex; align-items: center; justify-content: center; }
-.info { padding: 15px; }
-.like-btn { background: #ff0050; border: none; color: white; padding: 10px 20px; border-radius: 50px; cursor: pointer; width: 100%; font-weight: bold; }
+b:root { --primary: #ff0050; --bg: #000; --text: #fff; }
+body { background: var(--bg); color: var(--text); margin: 0; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+/* Navigasyon */
+.nav-bar { position: fixed; top: 0; width: 100%; padding: 15px; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); z-index: 100; text-align: center; }
+#search { width: 85%; padding: 12px; border-radius: 25px; border: none; background: #222; color: white; }
+
+/* Akış */
+.main-container { padding-top: 80px; display: flex; flex-direction: column; align-items: center; }
+.card { width: 95%; max-width: 450px; background: #1a1a1a; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+
+video { width: 100%; height: 550px; object-fit: cover; border-radius: 20px 20px 0 0; cursor: pointer; }
+.details { padding: 15px; }
+
+/* Butonlar ve Animasyon */
+.interaction { display: flex; gap: 20px; margin: 10px 0; }
+.btn { background: none; border: 1px solid #444; color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+.btn.active { color: var(--primary); border-color: var(--primary); }
+
+/* Yorumlar */
+.comment-list { font-size: 0.85em; color: #aaa; margin-top: 10px; border-top: 1px solid #333; padding-top: 10px; }
